@@ -1,0 +1,43 @@
+def PowerA3(A):
+    B = A ** 3
+    return B
+
+print (PowerA3(3))
+
+def PowerA234(A):
+    B = A ** 2
+    C = A ** 3
+    D = A ** 4
+    return B, C, D
+numbers = [2.0, 4.0, 5.0, 3.0]
+for i, num in enumerate(numbers, 1):
+    B, C, D = PowerA234(num)
+    print(B, C, D)
+
+import math
+def Mean(X, Y):
+    AMean = (X + Y)/2
+    GMean = math.sqrt(X * Y)
+    GMean = (X * Y) ** 0.5
+    return AMean, GMean
+print(Mean(4, 6))
+
+import math
+
+def Mean(X, Y):
+    """Вычисляет среднее арифметическое и среднее геометрическое."""
+    AMean = (X + Y) / 2
+    GMean = math.sqrt(X * Y)
+    return AMean, GMean
+
+# Задаем исходные значения A, B, C, D (можно заменить на input)
+A, B, C, D = 4.0, 9.0, 16.0, 25.0
+
+# Находим средние для пар (A, B), (A, C), (A, D)
+pairs = [("A и B", A, B), ("A и C", A, C), ("A и D", A, D)]
+
+for name, x, y in pairs:
+    a_mean, g_mean = Mean(x, y)
+    print(f"Пара {name} ({x}, {y}): AMean = {a_mean}, GMean = {g_mean}")
+
+
