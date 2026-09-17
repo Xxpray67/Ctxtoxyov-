@@ -1,0 +1,27 @@
+L = float(int(input('Введите число:')))
+B = L // 100
+print(B)
+
+m = float(int(input('Введите число:')))
+M = m // 1000
+print (M)
+
+B = float(int(input('Введите число:')))
+b = B // 1024
+print(b)
+
+A = float(int(input('Введите число:')))
+B = float(int(input('Введите число:')))
+if A < 0 and B <0:
+    print ('Error')
+else:
+    pr = B // A
+    print(pr)
+
+a = float(int(input('Введите число:')))
+b = float(int(input('Введите число:')))
+if a < 0 and b < 0:
+    print('Error')
+else:
+    v = a % b
+    print(v)
