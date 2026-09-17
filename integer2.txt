@@ -1,0 +1,32 @@
+a = (int(input('Введите число:')))
+if a > 10:
+    v = a // 10
+    n = a % 10
+    print (v, n)
+else:
+    ptint('Error')
+
+a = (int(input('Введите число:')))
+if a > 10:
+    v = a // 10
+    n = a % 10
+    b = v + n 
+    print(b)
+else: 
+    print('Error')
+
+a = (int(input('Введите число:')))
+if a > 10:
+    m = a // 10
+    n = a % 10 
+    v = (n * 10) + m
+    print (v)
+else:
+    print('Error')
+
+a = (int(input('Введите число:')))
+if a > 100:
+    one = a // 100
+    print (one)
+else:
+    print ('Error')
